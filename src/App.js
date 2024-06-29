@@ -1,13 +1,14 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Product from './pages/Product.js'
-import Checkout from './pages/Checkout.js'
+import Product from './pages/Product/Product.js'
+import Checkout from './pages/Product/Checkout.js'
 import Header from './components/Header.js'
-import Sidebar from './components/Sidebar.js'
+import Sidebar from './components/Product/Sidebar'
 import Footer from './components/Footer.js'
-import ProductDetails from './pages/ProductDetails.js'
-import SearchResults from './pages/SearchResults.js';
+import ProductDetails from './pages/Product/ProductDetails.js'
+import SearchResults from './pages/Product/SearchResults.js';
 import Home from './pages/Home.js';
+
 const App = () => {
   return (
     <div className='overflow-hidden flex flex-col justify-between min-h-[100vh]'>
@@ -17,8 +18,9 @@ const App = () => {
         </div>
         <div className='min-h-full overflow-hidden '>
         <Routes>
-          <Route path='/products' element={<Product />} />
           <Route path='/' element={<Home />} />
+
+          <Route path='/products' element={<Product />} />
           <Route path='/search' element={<SearchResults />} />
           <Route path="/cart-report" element={<Checkout />} />
           <Route path='/product/:id' element={<ProductDetails />}>

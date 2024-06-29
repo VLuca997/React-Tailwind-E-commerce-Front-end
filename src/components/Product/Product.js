@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BsPlus, BsEyeFill } from 'react-icons/bs';
 import { FaStar } from 'react-icons/fa';
-import { CartContext } from '../contexts/CartContext';
+import { CartContext } from '../../contexts/Product/CartContext';
 
 const Product = ({ product }) => {
     const { addToCart } = useContext(CartContext);

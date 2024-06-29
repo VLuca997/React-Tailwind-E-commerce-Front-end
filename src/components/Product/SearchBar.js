@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ProductContext } from '../contexts/ProductContext';
+import { ProductContext } from '../../contexts/Product/ProductContext';
 import { FaSearch, FaTimes } from 'react-icons/fa';
 
 const SearchBar = () => {

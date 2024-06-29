@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { IoMdArrowForward } from 'react-icons/io';
-import { SidebarContext } from '../contexts/SidebarContext';
-import { CartContext } from '../contexts/CartContext';
+import { SidebarContext } from '../../contexts/Product/SidebarContext';
+import { CartContext } from '../../contexts/Product/CartContext';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem'; // Assuming CartItem is in the same directory
 

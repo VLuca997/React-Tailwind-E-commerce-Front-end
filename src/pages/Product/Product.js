@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
-import { ProductContext } from '../contexts/ProductContext';
-import Product from '../components/Product';
-import FilteringProducts from '../components/FilteringProducts ';
+import { ProductContext } from '../../contexts/Product/ProductContext';
+import Product from '../../components/Product/Product';
+import FilteringProducts from '../../components/Product/FilteringProducts ';
 
 const Products = () => {
     const { products } = useContext(ProductContext);

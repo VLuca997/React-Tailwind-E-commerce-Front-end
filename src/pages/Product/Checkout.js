@@ -1,8 +1,8 @@
 // Checkout.js 
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../contexts/CartContext';
-import CartItem from './../components/CartItem'; // Assuming CartItem is in the same directory
+import { CartContext } from '../../contexts/Product/CartContext';
+import CartItem from '../../components/Product/CartItem'; // Assuming CartItem is in the same directory
 
 const Checkout = () => {
   const { cart } = useContext(CartContext);

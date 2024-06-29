@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
-import { SidebarContext } from '../contexts/SidebarContext';
-import { CartContext } from '../contexts/CartContext'; // Importa il contesto del carrello
+import { SidebarContext } from '../contexts/Product/SidebarContext';
+import { CartContext } from '../contexts/Product/CartContext'; // Importa il contesto del carrello
 import { Link } from 'react-router-dom';
 
 //icons
 import { BsBag } from 'react-icons/bs';
-import SearchBar from './SearchBar';
+import SearchBar from './Product/SearchBar';
 
 const Header = () => {
     const { isOpen, setIsOpen } = useContext(SidebarContext);
@@ -32,6 +32,12 @@ const Header = () => {
                 <div className='hover:text-white font-bold px-2'>
                     <div>
                         <Link to={'/products'}>Product</Link>
+                    </div>
+                  
+                </div>
+                <div className='hover:text-white font-bold px-2'>
+                    <div>
+                        <Link to={'/exercise'}>Exercise</Link>
                     </div>
                   
                 </div>
