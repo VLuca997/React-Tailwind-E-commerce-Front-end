@@ -34,9 +34,9 @@ const Header = () => {
                         <Link to="/products" className="text-white hover:text-gray-300 font-semibold">
                             Prodotti
                         </Link>
-                        {/* <Link to="/palestra" className="text-white hover:text-gray-300 font-semibold">
+                         <Link to="/palestra" className="text-white hover:text-gray-300 font-semibold">
                             Palestra
-                        </Link> */}
+                        </Link> 
                     </nav>
                 {/* Cart Icon */}
                 <div className="relative flex items-center">

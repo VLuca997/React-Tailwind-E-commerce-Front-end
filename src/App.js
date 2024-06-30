@@ -8,7 +8,8 @@ import Footer from './components/Footer.js'
 import ProductDetails from './pages/Product/ProductDetails.js'
 import SearchResults from './pages/Product/SearchResults.js';
 import Home from './pages/Home.js';
-import PalestraHome from './pages/Ikea/PalestraHome.js';
+import PalestraHome from './pages/Palestra/PalestraHome.js';
+import MuscolarExercises from './pages/Palestra/MuscolarExercises.js';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/palestra' element={<PalestraHome />} />
+          <Route path='/palestra/muscolar-exercises' element={<MuscolarExercises />} />
           <Route path='/products' element={<Product />} />
           <Route path='/search' element={<SearchResults />} />
           <Route path="/cart-report" element={<Checkout />} />
@@ -30,7 +32,8 @@ const App = () => {
         <Sidebar />
         </div>
        <div className=''>
-       <Footer /></div> 
+        <Footer />
+       </div> 
       </BrowserRouter>
 
     </div>
