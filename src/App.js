@@ -8,6 +8,7 @@ import Footer from './components/Footer.js'
 import ProductDetails from './pages/Product/ProductDetails.js'
 import SearchResults from './pages/Product/SearchResults.js';
 import Home from './pages/Home.js';
+import PalestraHome from './pages/Palestra/PalestraHome.js';
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
         <div className='min-h-full overflow-hidden '>
         <Routes>
           <Route path='/' element={<Home />} />
-
+          <Route path='/palestra' element={<PalestraHome />} />
           <Route path='/products' element={<Product />} />
           <Route path='/search' element={<SearchResults />} />
           <Route path="/cart-report" element={<Checkout />} />
