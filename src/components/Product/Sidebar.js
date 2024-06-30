@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { IoMdArrowForward } from 'react-icons/io';
-import { SidebarContext } from '../contexts/SidebarContext';
-import { CartContext } from '../contexts/CartContext';
+import { SidebarContext } from '../../contexts/Product/SidebarContext';
+import { CartContext } from '../../contexts/Product/CartContext';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem'; // Assuming CartItem is in the same directory
 
@@ -49,7 +49,7 @@ const Sidebar = () => {
                     </button>
                 </div>
             </div>
-            <div className='mb-2 text-center py-2 bg-green-500 hover:bg-green-600 rounded-full transition-all duration-300 ease-in-out'>
+            <div className='mb-2 text-center py-2 bg-yellow-300 hover:bg-yellow-300 rounded-full transition-all duration-300 ease-in-out'>
                 <Link
                     to='/cart-report'
                     className='text-white font-bold'

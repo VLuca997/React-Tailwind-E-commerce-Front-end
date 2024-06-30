@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 
 //importiamo il provider di Home
-import ProductProvider from './contexts/ProductContext';
+import ProductProvider from './contexts/Product/ProductContext';
 //importiamo il provider di Sidebar
-import SidebarProvider from './contexts/SidebarContext';
+import SidebarProvider from './contexts/Product/SidebarContext';
 //importiamo il provider di Cart
-import CartProvider from './contexts/CartContext';
+import CartProvider from './contexts/Product/CartContext';
 
 
 

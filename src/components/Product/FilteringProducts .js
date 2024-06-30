@@ -42,12 +42,12 @@ const FilteringProducts = ({ products, setFilteredProducts }) => {
 
     return (
         <div className="space-y-4">
-            <div className="flex items-center space-x-2 text-xl text-gray-700">
+            <div className="flex items-center space-x-4 text-xl text-gray-700">
                 <FaFilter />
                 <h2>Filtra Prodotti</h2>
             </div>
-            <div className="filter-controls space-y-4">
-                <div>
+            <div className="filter-controls flex space-x-4">
+                <div className="flex-1">
                     <label className="block text-gray-700">Categoria</label>
                     <select 
                         value={category} 
@@ -60,7 +60,7 @@ const FilteringProducts = ({ products, setFilteredProducts }) => {
                         ))}
                     </select>
                 </div>
-                <div>
+                <div className="flex-1">
                     <label className="block text-gray-700">Valutazione</label>
                     <select 
                         value={rating} 
@@ -74,7 +74,7 @@ const FilteringProducts = ({ products, setFilteredProducts }) => {
                         <option value={4}>4 Stelle & Up</option>
                     </select>
                 </div>
-                <div>
+                <div className="flex-1">
                     <label className="block text-gray-700">Prezzo Minimo</label>
                     <input
                         type="number"
@@ -84,7 +84,7 @@ const FilteringProducts = ({ products, setFilteredProducts }) => {
                         placeholder="Inserisci il prezzo minimo"
                     />
                 </div>
-                <div>
+                <div className="flex-1">
                     <label className="block text-gray-700">Prezzo Massimo</label>
                     <input
                         type="number"
@@ -94,10 +94,10 @@ const FilteringProducts = ({ products, setFilteredProducts }) => {
                         placeholder="Inserisci il prezzo massimo"
                     />
                 </div>
-                <div>
+                <div className="flex-1">
                     <button
                         onClick={resetFilters}
-                        className="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300"
+                        className="bg-yellow-300 text-black px-4 py-2 rounded-md hover:bg-yellow-300 transition-all duration-500 w-full"
                     >
                         Reset
                     </button>

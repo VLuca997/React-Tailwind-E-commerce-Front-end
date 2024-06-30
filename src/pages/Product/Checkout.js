@@ -1,8 +1,8 @@
 // Checkout.js 
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../contexts/CartContext';
-import CartItem from './../components/CartItem'; // Assuming CartItem is in the same directory
+import { CartContext } from '../../contexts/Product/CartContext';
+import CartItem from '../../components/Product/CartItem'; // Assuming CartItem is in the same directory
 
 const Checkout = () => {
   const { cart } = useContext(CartContext);
@@ -41,13 +41,13 @@ const Checkout = () => {
           <div className="flex justify-end">
             <button
               onClick={handleDownloadPDF}
-              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md mr-4 focus:outline-none"
+              className="bg-yellow-300 hover:bg-blue-600 text-white py-2 px-4 rounded-md mr-4 focus:outline-none"
             >
               Scarica PDF
             </button>
             <Link
               to="/cart-report"
-              className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md focus:outline-none"
+              className="bg-yellow-300 hover:bg-yellow-300 text-white py-2 px-4 rounded-md focus:outline-none"
             >
               Concludi Ordine
             </Link>

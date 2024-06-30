@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ProductContext } from '../contexts/ProductContext';
+import { ProductContext } from '../../contexts/Product/ProductContext';
 import { FaSearch, FaTimes } from 'react-icons/fa';
 
 const SearchBar = () => {
@@ -60,18 +60,18 @@ const SearchBar = () => {
         <div className="relative">
             <input 
                 type="text" 
-                placeholder="Search..." 
+                placeholder="Cerca il Prodotto per lettere..." 
                 value={searchTerm}
                 onChange={handleSearch}
                 onKeyUp={handleKeyPress}
-                className="py-2 px-3 rounded-2xl"
+                className="py-2 w-[700px] px-3 rounded-2xl"
             />
             {searchTerm && (
                 <button onClick={clearSearch} className="absolute right-10 top-1 p-2 text-gray-400 hover:text-gray-600">
                     <FaTimes />
                 </button>
             )}
-            <button onClick={handleButtonClick} className="p-2 bg-blue-500 text-white rounded-full ml-2">
+            <button onClick={handleButtonClick} className="p-2 bg-yellow-300 text-white rounded-full ml-2">
                 <FaSearch />
             </button>
             {suggestions.length > 0 && (

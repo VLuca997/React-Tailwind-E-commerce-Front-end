@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../contexts/CartContext';
+import { CartContext } from '../../contexts/Product/CartContext';
 
 const CartItem = ({ item }) => {
     const { id, amount, title, price, image } = item;
