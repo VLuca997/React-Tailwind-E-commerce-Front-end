@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { ProductContext } from '../../contexts/Product/ProductContext';
 import Product from '../../components/Product/Product';
 import FilteringProducts from '../../components/Product/FilteringProducts ';
+import SearchBar from '../../components/Product/SearchBar';
 
 const Products = () => {
     const { products } = useContext(ProductContext);
@@ -12,15 +13,19 @@ const Products = () => {
     }
 
     return (
-        <section className='py-16 bg-gray-200'>
-            <div className=' mx-5 flex flex-col md:flex-row'>
-                <div className='h-[70%] w-full md:w-1/4 p-4 bg-white rounded-lg shadow-md mb-4 md:mb-0'>
+        <section className='pb-16 bg-yellow-300 flex-col flex justify-center w-full'>
+            <div className='bg-zinc-500 flex justify-center mt-2 py-3'>
+                <SearchBar />
+
+            </div>
+            <div className='flex flex-col p-5'>
+                <div className='bg-gray-400 p-5 items-center'>
                     <FilteringProducts products={products} setFilteredProducts={setFilteredProducts} />
                 </div>
-                <div className='m-2'>
+                <div className='m-4'>
 
                 </div>
-                <div className=' w-full md:w-3/4 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl '>
+                <div className=' grid grid-cols-4 gap-4 '>
                     {filteredProducts.map((product) => (
                         <Product product={product} key={product.id} />
                     ))}

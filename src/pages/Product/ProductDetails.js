@@ -39,13 +39,13 @@ const ProductDetails = () => {
           <div className='flex flex-row justify-evenly items-center '>
           <button
             onClick={handleAddToCart}
-            className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md focus:outline-none"
+            className="bg-yellow-300 hover:bg-yellow-300 text-white py-2 px-4 rounded-md focus:outline-none"
           >
             Aggiungi al Carrello
           </button>
           <button
         onClick={handleGoBack}
-        className="ml-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md focus:outline-none"
+        className="ml-2 bg-yellow-300 hover:bg-blue-600 text-white py-2 px-4 rounded-md focus:outline-none"
       >
         Torna Indietro
       </button>

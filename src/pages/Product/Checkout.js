@@ -41,13 +41,13 @@ const Checkout = () => {
           <div className="flex justify-end">
             <button
               onClick={handleDownloadPDF}
-              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md mr-4 focus:outline-none"
+              className="bg-yellow-300 hover:bg-blue-600 text-white py-2 px-4 rounded-md mr-4 focus:outline-none"
             >
               Scarica PDF
             </button>
             <Link
               to="/cart-report"
-              className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md focus:outline-none"
+              className="bg-yellow-300 hover:bg-yellow-300 text-white py-2 px-4 rounded-md focus:outline-none"
             >
               Concludi Ordine
             </Link>
